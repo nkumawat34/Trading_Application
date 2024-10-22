@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export default function Orders() {
   const [instruments, setInstruments] = useState([]);
   const [trades, setTrades] = useState({}); // Store trades by instrument name

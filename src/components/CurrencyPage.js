@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export default function CurrencyPage() {
   const location = useLocation();
   const item = location.state.currency; // Pass the selected currency to this component

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Orders = () => {
   const [positions, setPositions] = useState([]); // State to store positions
   const [error, setError] = useState(null); // State to store any errors
