@@ -107,8 +107,7 @@ export default function CurrencyPage() {
       },
     };
     executeOrder(msg);
-<<<<<<< HEAD
-=======
+
     toast.success('Order Placed!', {
       //position: toast.POSITION.TOP_RIGHT,
       autoClose: 3000,
@@ -117,7 +116,7 @@ export default function CurrencyPage() {
       pauseOnHover: true,
       draggable: true,
     });
->>>>>>> 79cee03 (Project)
+
   };
 
   // Function to handle sell operation
@@ -166,6 +165,15 @@ export default function CurrencyPage() {
         }
       };
     };
+
+    toast.success('Order Placed!', {
+      //position: toast.POSITION.TOP_RIGHT,
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+    });
   };
 
   return (

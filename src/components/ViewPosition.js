@@ -197,6 +197,14 @@ const Orders = () => {
     ws.onclose = () => {
       console.log('WebSocket closed.');
     };
+    toast.success('Order Cancelled Successfully!', {
+      //position: toast.POSITION.TOP_RIGHT,
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+    });
   };
   
   return (

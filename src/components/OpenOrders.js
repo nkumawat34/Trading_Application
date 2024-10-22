@@ -106,6 +106,14 @@ export default function OpenOrders() {
         }
       };
     };
+    toast.success('Order Cancelled!', {
+      //position: toast.POSITION.TOP_RIGHT,
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+    });
   };
 
   const editOrder = (order_id, price, amount) => {
@@ -130,6 +138,15 @@ export default function OpenOrders() {
         }
       };
     };
+
+    toast.success('Order Edited Sucessfully!', {
+      //position: toast.POSITION.TOP_RIGHT,
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+    });
   };
 
   const openEditModal = (order) => {

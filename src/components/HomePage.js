@@ -41,7 +41,14 @@ export default function HomePage() {
         // Send the authentication message
         newWs.send(JSON.stringify(msg));
       };
-    //  window.location.reload()
+      toast.success('Authenticate Successfully!', {
+        //position: toast.POSITION.TOP_RIGHT,
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
     };
   
     const logout = () => {
@@ -104,7 +111,14 @@ export default function HomePage() {
         console.log('WebSocket error:', error);
       };
 
-      //window.location.reload()
+      toast.success('Logout Successfully!', {
+        //position: toast.POSITION.TOP_RIGHT,
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
     };
     
     useEffect(()=>{
