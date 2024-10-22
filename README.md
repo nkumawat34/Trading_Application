@@ -38,10 +38,12 @@ Before you begin, ensure you have the following installed:
 
    ```bash
    git clone https://github.com/nkumawat34/Trading_Application
+
+2. **Steps to start the Application**
+   ```bash   
+   cd Trading_Application
    
-2. cd Trading_Application
+   npm install
    
-3. npm install
-   
-4. npm start
+   npm start
    
